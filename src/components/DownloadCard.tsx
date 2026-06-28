@@ -6,7 +6,7 @@ interface DownloadCardProps {
 
 export default function DownloadCard({ title, description, filename }: DownloadCardProps) {
   return (
-    <div className="flex flex-col items-center gap-5 rounded-2xl bg-bg-card p-8 text-center">
+    <div className="flex flex-col items-center gap-5 rounded-2xl border border-white/5 bg-bg-card p-8 text-center shadow-lg transition-transform hover:scale-[1.02]">
       <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-bg-secondary">
         <svg
           className="h-8 w-8 text-accent"

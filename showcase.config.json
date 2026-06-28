@@ -1,0 +1,11 @@
+{
+  "appName": "showcase-challenge",
+  "displayName": "Ember Engine & Neo-Blast Ascension",
+  "description": "AI Challenge — a 3D game engine and marble roll game built with AI",
+  "visibility": "listed",
+  "runtime": "node",
+  "version": "22",
+  "buildCommand": "npm run build",
+  "startCommand": "node server.js",
+  "internalPort": 3000
+}
