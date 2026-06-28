@@ -1,0 +1,37 @@
+{
+  "name": "showcasechallenge",
+  "version": "1.0.0",
+  "description": "A single-page landing site for the company AI challenge, showcasing two macOS apps:",
+  "main": "server.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mawhite-ct/showcaseChallenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mawhite-ct/showcaseChallenge/issues"
+  },
+  "homepage": "https://github.com/mawhite-ct/showcaseChallenge#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.0"
+  }
+}
