@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import AboutSection from './components/AboutSection'
 import VideoSection from './components/VideoSection'
+import DownloadSection from './components/DownloadSection'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
         <Hero />
         <AboutSection />
         <VideoSection />
+        <DownloadSection />
       </div>
     </div>
   )
