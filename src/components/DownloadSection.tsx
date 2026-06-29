@@ -1,22 +1,31 @@
 import DownloadCard from './DownloadCard'
+import FadeIn from './FadeIn'
 
 export default function DownloadSection() {
   return (
-    <section className="px-6 py-16">
-      <h2 className="mb-8 text-center text-2xl font-bold md:text-3xl">
-        Download
-      </h2>
+    <section className="px-6 py-32">
+      <FadeIn>
+        <h2 className="mb-8 text-center text-2xl font-bold md:text-3xl">
+          Download
+        </h2>
+      </FadeIn>
       <div className="grid gap-8 md:grid-cols-2">
-        <DownloadCard
-          title="Ember Engine"
-          description="The full 3D game engine — editor, renderer, physics, and Lua scripting. macOS only."
-          filename="ember-engine.zip"
-        />
-        <DownloadCard
-          title="Neo-Blast Ascension"
-          description="A 10-level marble-roll game built in Ember Engine. Launch and play — no engine install needed."
-          filename="neo-blast-ascension.zip"
-        />
+        <FadeIn delay={100}>
+          <DownloadCard
+            title="Neo-Blast Ascension"
+            description="A 10-level marble-roll game. Launch and play — no engine install needed."
+            filename="neo-blast-ascension.zip"
+            badges={['10 Levels', 'Physics', 'Standalone', 'macOS']}
+          />
+        </FadeIn>
+        <FadeIn delay={200}>
+          <DownloadCard
+            title="Ember Engine"
+            description="The full 3D game engine — editor, renderer, physics, and Lua scripting. macOS only."
+            filename="ember-engine.zip"
+            badges={['3D Engine', 'Vulkan + Metal', 'Lua Scripting', 'macOS']}
+          />
+        </FadeIn>
       </div>
     </section>
   )

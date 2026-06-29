@@ -8,4 +8,36 @@
   --color-bg-card: #232B35;
   --color-text-primary: #F0F4F8;
   --color-text-secondary: #94A3B8;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  /* Neo-Blast palette */
+  --color-nba-bg: #141424;
+  --color-nba-card: #1E1E35;
+  --color-nba-pink: #E8439E;
+  --color-nba-purple: #8B7BEC;
+  --color-nba-blue: #5B8DEF;
+
+  --animate-drift: drift 20s ease-in-out infinite;
+  --animate-drift-reverse: drift-reverse 25s ease-in-out infinite;
+  --animate-drift-slow: drift-slow 30s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(30px, -20px); }
+  50% { transform: translate(-20px, 30px); }
+  75% { transform: translate(20px, 20px); }
+}
+
+@keyframes drift-reverse {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-30px, 20px); }
+  50% { transform: translate(20px, -30px); }
+  75% { transform: translate(-20px, -20px); }
+}
+
+@keyframes drift-slow {
+  0%, 100% { transform: translate(-50%, 0); }
+  33% { transform: translate(-50%, -20px); }
+  66% { transform: translate(-50%, 20px); }
 }
