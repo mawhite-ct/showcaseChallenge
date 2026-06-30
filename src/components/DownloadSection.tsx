@@ -15,7 +15,7 @@ export default function DownloadSection() {
             <DownloadCard
               title="Neo-Blast Ascension"
               description="A 10-level marble-roll game. Launch and play — no engine install needed."
-              filename="neo-blast-ascension.dmg"
+              href="https://github.com/mawhite-ct/showcaseChallenge/releases/latest/download/neo-blast-ascension.dmg"
               badges={['10 Levels', 'Physics', 'Standalone', 'macOS']}
               icon="/icons/neo-blast-ascension.png"
             />
@@ -24,7 +24,7 @@ export default function DownloadSection() {
             <DownloadCard
               title="Ember Engine"
               description="The full 3D game engine — editor, renderer, physics, and Lua scripting. macOS only."
-              filename="ember-engine.dmg"
+              href="https://github.com/mawhite-ct/showcaseChallenge/releases/latest/download/ember-engine.dmg"
               badges={['3D Engine', 'Vulkan + Metal', 'Lua Scripting', 'macOS']}
               icon="/icons/ember-engine.png"
             />

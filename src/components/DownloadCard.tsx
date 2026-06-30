@@ -1,12 +1,12 @@
 interface DownloadCardProps {
   title: string
   description: string
-  filename: string
+  href: string
   badges: string[]
   icon: string
 }
 
-export default function DownloadCard({ title, description, filename, badges, icon }: DownloadCardProps) {
+export default function DownloadCard({ title, description, href, badges, icon }: DownloadCardProps) {
   return (
     <div className="group relative rounded-2xl p-px transition-transform hover:scale-[1.02]">
       {/* Gradient border */}
@@ -36,7 +36,7 @@ export default function DownloadCard({ title, description, filename, badges, ico
         </div>
 
         <a
-          href={`/downloads/${filename}`}
+          href={href}
           download
           className="mt-auto inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-medium text-bg-primary transition-colors hover:bg-accent-hover"
         >
