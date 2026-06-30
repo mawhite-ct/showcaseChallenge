@@ -1,10 +1,5 @@
-src/
-*.ts
-*.tsx
-tsconfig.json
-vite.config.ts
-postcss.config.js
 .env
 PRD.md
 TECH_SPEC.md
 README.md
+persistent/
