@@ -9,11 +9,11 @@ interface VideoCardProps {
 
 export default function VideoCard({ title, description, src, variant = 'teal' }: VideoCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
-  const [playing, setPlaying] = useState(false)
+  const [started, setStarted] = useState(false)
 
   const handlePlay = () => {
     videoRef.current?.play()
-    setPlaying(true)
+    setStarted(true)
   }
 
   return (
@@ -22,18 +22,15 @@ export default function VideoCard({ title, description, src, variant = 'teal' }:
         <video
           ref={videoRef}
           className="aspect-video w-full"
-          controls={playing}
+          controls={started}
           preload="metadata"
           src={src}
-          onPlay={() => setPlaying(true)}
-          onPause={() => setPlaying(false)}
-          onEnded={() => setPlaying(false)}
         >
           Your browser does not support the video tag.
         </video>
 
-        {/* Play overlay — shown until user starts playing */}
-        {!playing && (
+        {/* Play overlay — shown until user first starts playing */}
+        {!started && (
           <button
             onClick={handlePlay}
             className="absolute inset-0 flex items-center justify-center bg-black/30 transition-colors hover:bg-black/40"
