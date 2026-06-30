@@ -1,7 +1,7 @@
 {
   "appName": "neo-blast-ascension",
-  "displayName": "Ember Engine & Neo-Blast Ascension",
-  "description": "AI Challenge — a 3D game engine and marble roll game built with AI",
+  "displayName": "Neo-Blast Ascension",
+  "description": "AI Challenge — a marble-roll game built with AI",
   "visibility": "listed",
   "runtime": "node",
   "version": "22",

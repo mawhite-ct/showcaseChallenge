@@ -14,10 +14,14 @@ export default function EngineHero() {
           <h2 className="font-display text-5xl font-bold tracking-tight md:text-7xl">
             <span className="text-accent">Ember</span> Engine
           </h2>
+        </FadeIn>
+        <FadeIn delay={150}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-text-secondary md:text-xl">
             A full 3D game engine with a scene editor, real-time Vulkan & Metal
             rendering, physics, and Lua scripting. From scratch. With AI.
           </p>
+        </FadeIn>
+        <FadeIn delay={300}>
           <div className="mt-10 flex items-center justify-center gap-3">
             <span className="inline-block h-1 w-12 rounded-full bg-accent opacity-60" />
             <span className="inline-block h-1 w-6 rounded-full bg-accent opacity-30" />
