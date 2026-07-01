@@ -10,6 +10,19 @@ export default function DownloadSection() {
             Download
           </h2>
         </FadeIn>
+
+        <FadeIn delay={50}>
+          <div className="mb-8 rounded-xl border border-amber-500/20 bg-amber-500/5 px-5 py-4 text-sm text-amber-200/90">
+            <p className="font-medium text-amber-300">⚠️ Heads up — unsigned apps</p>
+            <p className="mt-2 leading-relaxed">
+              These apps are not code-signed with an Apple Developer certificate.
+              CapTech-managed Macs will block them from opening. If you have a
+              personal Mac with an Apple Silicon chip (M1 or later), you can
+              download the DMGs there and they will open normally. We're working
+              with IT on a solution for managed machines — stay tuned.
+            </p>
+          </div>
+        </FadeIn>
         <div className="grid gap-8 md:grid-cols-2">
           <FadeIn delay={100}>
             <DownloadCard
