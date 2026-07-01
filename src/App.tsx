@@ -6,6 +6,7 @@ import RevealSection from './components/RevealSection'
 import EngineHero from './components/EngineHero'
 import EngineAboutSection from './components/EngineAboutSection'
 import RequirementsSection from './components/RequirementsSection'
+import ScrollIndicator from './components/ScrollIndicator'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
           src="/videos/neo-blast-ascension-demo.mp4"
           variant="pink"
         />
+        <ScrollIndicator />
       </div>
 
       {/* Transition: reveal sits in the gradient blend */}
