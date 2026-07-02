@@ -12,14 +12,12 @@ export default function DownloadSection() {
         </FadeIn>
 
         <FadeIn delay={50}>
-          <div className="mb-8 rounded-xl border border-amber-500/20 bg-amber-500/5 px-5 py-4 text-sm text-amber-200/90">
-            <p className="font-medium text-amber-300">⚠️ Heads up — unsigned apps</p>
+          <div className="mb-8 rounded-xl border border-accent/20 bg-accent/5 px-5 py-4 text-sm text-text-secondary">
+            <p className="font-medium text-accent">📋 First-time setup</p>
             <p className="mt-2 leading-relaxed">
-              These apps are not code-signed with an Apple Developer certificate.
-              CapTech-managed Macs will block them from opening. If you have a
-              personal Mac with an Apple Silicon chip (M1 or later), you can
-              download the DMGs there and they will open normally. We're working
-              with IT on a solution for managed machines — stay tuned.
+              After mounting the DMG, run the <code className="rounded bg-white/10 px-1.5 py-0.5 text-xs text-text-primary">RUN_ME_FIRST.command</code> script
+              inside. This clears the macOS quarantine flag so the app can launch.
+              After that, drag the app to your Applications folder and run it normally.
             </p>
           </div>
         </FadeIn>
