@@ -15,9 +15,20 @@ export default function DownloadSection() {
           <div className="mb-8 rounded-xl border border-accent/20 bg-accent/5 px-5 py-4 text-sm text-text-secondary">
             <p className="font-medium text-accent">📋 First-time setup</p>
             <p className="mt-2 leading-relaxed">
-              After mounting the DMG, run the <code className="rounded bg-white/10 px-1.5 py-0.5 text-xs text-text-primary">RUN_ME_FIRST.command</code> script
-              inside. This clears the macOS quarantine flag so the app can launch.
-              After that, drag the app to your Applications folder and run it normally.
+              These apps aren't code-signed, so macOS will block them by default.
+              After mounting the DMG and dragging the app to your Applications folder,
+              open Terminal and run:
+            </p>
+            <div className="mt-3 space-y-2">
+              <code className="block rounded bg-white/10 px-3 py-2 text-xs text-text-primary">
+                xattr -d com.apple.quarantine /Applications/Neo-Blast\ Ascension.app
+              </code>
+              <code className="block rounded bg-white/10 px-3 py-2 text-xs text-text-primary">
+                xattr -d com.apple.quarantine /Applications/Ember\ Engine.app
+              </code>
+            </div>
+            <p className="mt-3 leading-relaxed">
+              After that, the apps will open normally.
             </p>
           </div>
         </FadeIn>
